@@ -41,7 +41,7 @@
     "dotenv": "^16.4.4",
     "exceljs": "^4.4.0",
     "googleapis": "^134.0.0",
-    "html-pdf": "^3.0.1",
+    "html-pdf": "^1.5.0",
     "luxon": "^3.4.4",
     "moment": "^2.30.1",
     "mongoose": "^6.8.3",
