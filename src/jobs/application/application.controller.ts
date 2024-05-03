@@ -16,7 +16,7 @@ private readonly logger = new ConsoleLogger(ApplicationController.name);
 // @Post()
 //     async applyForJob(@Body() applicationData: Application): Promise<Application> {
 //         return this.applicationservice.applyForJob(applicationData);
-//       //k}
+//       //kj}
 
       @Get()
       async findAll(): Promise<Application[]> {
