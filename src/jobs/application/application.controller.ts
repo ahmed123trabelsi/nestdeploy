@@ -4,8 +4,9 @@ import { Application } from '../schemas/application.schema';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { UpdateApplicationDto } from './dto/UpdateApplication.dto';
 import { Response } from 'express';
-import { CvData } from '../schemas/CvData.schema';
+
 import * as pdf from 'html-pdf';
+import { CvData } from 'src/jobs/schemas/cvdata.schema';
 
 @Controller('application')
 export class ApplicationController {
