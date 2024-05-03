@@ -1,4 +1,4 @@
-import { Body, ConsoleLogger, Controller, Delete, Get, HttpStatus, Param, Post, Put, Res, UploadedFile, UseInterceptors } from '@nestjs/common';
+
 import { ApplicationService } from './application.service';
 import { Application } from '../schemas/application.schema';
 import { FileInterceptor } from '@nestjs/platform-express';
@@ -7,6 +7,7 @@ import { Response } from 'express';
 
 import * as pdf from 'html-pdf';
 import { CvData } from 'src/jobs/schemas/cvdata.schema';
+import { Body, ConsoleLogger, Controller, Delete, Get, HttpStatus, Param, Post, Put, Res, UploadedFile, UseInterceptors } from '@nestjs/common';
 
 @Controller('application')
 export class ApplicationController {
@@ -200,3 +201,4 @@ margin-right: 20px; /* Espacement entre les sections
       }
 }
 }
+
