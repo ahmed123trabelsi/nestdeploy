@@ -14,7 +14,7 @@ export  class Tasks{
     description:string;
     @Prop()
     startDate:Date;
-    // Changejd finish date to string by Aymen because it caused an error in the function checkAndRemoveUserFromTask since the date format parameter takes a string type and not a date type.
+    // Changed finish date to string by Aymen because it caused an error in the function checkAndRemoveUserFromTask since the date format parameter takes a string type and not a date type.
     @Prop()
     FinishDate?:string
     // @Prop()

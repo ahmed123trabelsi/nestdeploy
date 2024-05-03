@@ -1,13 +1,11 @@
-
+import { Body, ConsoleLogger, Controller, Delete, Get, HttpStatus, Param, Post, Put, Res, UploadedFile, UseInterceptors } from '@nestjs/common';
 import { ApplicationService } from './application.service';
 import { Application } from '../schemas/application.schema';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { UpdateApplicationDto } from './dto/UpdateApplication.dto';
 import { Response } from 'express';
-
+import { CvData } from '../schemas/CvData.schema';
 import * as pdf from 'html-pdf';
-import { CvData } from 'src/jobs/schemas/cvdata.schema';
-import { Body, ConsoleLogger, Controller, Delete, Get, HttpStatus, Param, Post, Put, Res, UploadedFile, UseInterceptors } from '@nestjs/common';
 
 @Controller('application')
 export class ApplicationController {
@@ -17,7 +15,7 @@ private readonly logger = new ConsoleLogger(ApplicationController.name);
 // @Post()
 //     async applyForJob(@Body() applicationData: Application): Promise<Application> {
 //         return this.applicationservice.applyForJob(applicationData);
-//       //kjj}
+//       }
 
       @Get()
       async findAll(): Promise<Application[]> {
@@ -201,4 +199,3 @@ margin-right: 20px; /* Espacement entre les sections
       }
 }
 }
-
